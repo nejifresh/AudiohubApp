@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen"
+
+   >
+
+
+    <EditText
+
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/txtlogusername"
+        android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:drawableLeft="@drawable/user3"
+        android:drawablePadding="10dp"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+       android:textColorHint="@color/white"
+        android:hint="Enter Your Username" />
+
+    <EditText
+        android:textSize="20sp"
+         android:layout_marginTop="15dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:drawableLeft="@drawable/passwordlock"
+        android:id="@+id/txtlogpass"
+        android:drawablePadding="10dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:textColorLink="@color/white"
+        android:textColorHighlight="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:password="true" />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button android:id="@+id/btnLogin"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Login "
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent"
+        android:textSize="15sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:onClick="loginClickListener"
+        android:elevation="5dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/white"/>
+
+
+    <Button android:id="@+id/btnSignUp"
+        android:layout_width="160dp"
+        android:layout_below="@+id/btnLogin"
+        android:layout_height="wrap_content"
+        android:text="Create Account "
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:textSize="15sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+         android:elevation="5dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/white"/>
+
+</RelativeLayout>
+</LinearLayout>
